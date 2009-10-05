@@ -1,0 +1,24 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Published at</th>
+  </tr>
+
+  {{#posts}}
+  <tr>
+    <td>{{title}}</td>
+    <td>{{content}}</td>
+    <td>{{published_at}}</td>
+    <td><a href="{{show_href}}">Show</a></td>
+    <td><a href="{{edit_href}}">Edit</a></td>
+  </tr>
+  {{/posts}}
+
+</table>
+
+<br />
+
+<a href="{{new_post_href}}">New Post</a>
