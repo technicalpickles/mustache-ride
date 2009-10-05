@@ -1,0 +1,25 @@
+<h1>New post</h1>
+
+<form action="{{action_path}}" method="post">
+  {{error_messages}}
+
+  <input name="authenticity_token" type="hidden" value="{{authenticity_token}}">
+
+  <p>
+    <label for="post[title]">Title</label><br />
+    <input type="text" name="post[title]" value="{{title}}">
+  </p>
+
+  <p>
+    <label for="post[content]">Content</label><br />
+    <textarea name="post[content]" value="{{content}}"></textarea>
+  </p>
+
+  <p>
+    <label for="post[published_at]">Published at</label><br />
+  </p>
+
+  <p>
+    <input type="submit" value="Create">
+  </p>
+</form>
